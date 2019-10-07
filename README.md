@@ -172,7 +172,10 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-`http://127.0.0.1:8000/`
+
+### Django default welcome page
+
+Host: `http://127.0.0.1:8000/`
 
 ![An image of welcome landing page](landing-page.png)
 
@@ -241,9 +244,9 @@ python3 manage.py runserver
 http://127.0.0.1:8000/admin #http://127.0.0.1:8000/admin/login/?next=/admin/
 ```
 
-Super admin panel after logged in and migration:
+### Super admin panel after successfull logged in and migration:
 
-![An image of admin panel](super-admin-panel)
+![An image of admin panel](super-admin-panel.png)
 
 
 
