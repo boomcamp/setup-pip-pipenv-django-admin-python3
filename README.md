@@ -129,6 +129,12 @@ django = "==2.2.6"
 python_version = "3.6"
 ```
 
+Example of package installed in `(my-app)` environment, we can check it by typing `pip list`:
+
+
+![An image of packages](available-packages-in-my-app-environment.png)
+
+
 ## Generating starter project using django-admin.
 
 6. We can check django version.
