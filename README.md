@@ -1,4 +1,4 @@
-# Basic python environment set-up.
+# Basic environment set-up.
 
 - Changing python2 to python3 vice versa.
 - Installing python pip and pipenv.
