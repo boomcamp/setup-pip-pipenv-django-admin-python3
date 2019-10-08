@@ -21,8 +21,9 @@ It will display all available python version's installed in your computer like e
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ ls /usr/bin/python*
-/usr/bin/python  /usr/bin/python2  /usr/bin/python2.7  /usr/bin/python3  /usr/bin/python3.6  /usr/bin/python3.6m  /usr/bin/python3m
-
+/usr/bin/python     /usr/bin/python3           /usr/bin/python3.6m         /usr/bin/python3.7m      /usr/bin/python3m-config
+/usr/bin/python2    /usr/bin/python3.6         /usr/bin/python3.6m-config  /usr/bin/python3-config
+/usr/bin/python2.7  /usr/bin/python3.6-config  /usr/bin/python3.7          /usr/bin/python3m
 ```
 if havent installed python 3 : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
 
