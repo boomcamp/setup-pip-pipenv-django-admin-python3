@@ -88,7 +88,7 @@ dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pipenv --version
 pipenv, version 2018.11.26
 ```
 
-## Setting up basic environment with pipenv, python3 and django-admin.
+## Creating our first environment with pipenv, python3 and django-admin.
 
 What is **django-admin** = is a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project. Django automatically generates admin UI based on your project models.[Tutorialspoint](https://www.tutorialspoint.com/django/django_admin_interface.htm).
 
