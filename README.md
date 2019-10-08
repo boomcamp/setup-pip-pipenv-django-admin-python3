@@ -7,7 +7,7 @@
 - Running basic migration with SQLite.
 - Creating a super user.
 
-## Swithing python 2 into python 3 version.
+## Switching python 2 into python 3 version.
 
 Python 2 will be no longer maintain until 2020, so its ideal if we switch to it's newer version you can read more about python [Python 2.7 will retire in](https://pythonclock.org/).
 
