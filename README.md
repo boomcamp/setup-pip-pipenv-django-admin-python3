@@ -24,7 +24,7 @@ dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ ls /usr/bin/python*
 /usr/bin/python  /usr/bin/python2  /usr/bin/python2.7  /usr/bin/python3  /usr/bin/python3.6  /usr/bin/python3.6m  /usr/bin/python3m
 
 ```
-if havent installed python 3 [Installation python 3](https://docs.python-guide.org/starting/install3/linux/).
+if havent installed python 3 : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
 
 2. Next edit `./bashrc` using nano editor.
 
