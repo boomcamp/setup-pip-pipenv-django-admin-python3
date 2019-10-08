@@ -59,8 +59,8 @@ Python 3.6.8
 Installation:
 
 ```
-python2: sudo apt install python-pip
-python3: sudo apt install python3-pip
+sudo apt install python3-pip
+#python2: sudo apt install python-pip
 ```
 
 Note: pip3 is only available for 3.7.4^ versions you can find installation procedure here : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
@@ -70,11 +70,11 @@ Note: pip3 is only available for 3.7.4^ versions you can find installation proce
 [Pipenv](https://pypi.org/project/pipenv/)
 
 ```
-python2: sudo pip install pipenv
-python3: sudo pip3 install pipenv
+sudo pip3 install pipenv
+#python2: sudo pip install pipenv
 ```
 
-You should now successfully installed pip and pipenv. 
+You should now successfully installed pip3 and pipenv. 
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pip3 --version
