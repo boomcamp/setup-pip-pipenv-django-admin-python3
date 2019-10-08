@@ -63,7 +63,7 @@ python2: sudo apt install python-pip
 python3: sudo apt install python3-pip
 ```
 
-Note: pip3 is only available for 3.7.x versions you can find installation procedure here : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
+Note: pip3 is only available for 3.7.4^ versions you can find installation procedure here : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
 
 **Pipenv** = is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.)
 
