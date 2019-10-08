@@ -50,7 +50,7 @@ Python 3.6.8
 ```
 
 
-## Installing python pip and pipenv.
+## Installing pipenv using pip3.
 
 **Pip** = is a package manager for Python.
 
