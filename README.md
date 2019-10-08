@@ -7,7 +7,7 @@
 - Running basic migration with SQLite.
 - Creating a super user.
 
-## Changing python2 to python3 vice versa.
+## Swithing python 2 into python 3 version.
 
 1. We need to check first available versions of python.
 
