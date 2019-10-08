@@ -192,7 +192,7 @@ Host: `http://127.0.0.1:8000/`
 
 ## Running basic migration with SQLite.
 
-By default, the configuration uses *SQLite* you can run it by typing `python3 manage.py migrate`, the output will be:
+By default, the configuration uses *SQLite*, you can type `python3 manage.py migrate` to create tables, the output will be:
 
 ```
 (my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app/sample$ python3 manage.py migrate
