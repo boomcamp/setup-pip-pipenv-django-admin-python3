@@ -245,7 +245,7 @@ Superuser created successfully.
 python3 manage.py runserver
 ```
 
-3. Next navigate to admin dashboard, you should now successfully logged in to admin dashboard.
+3. Next navigate to admin dashboard, you should now able to login as superuser account.
 
 ```
 http://127.0.0.1:8000/admin #http://127.0.0.1:8000/admin/login/?next=/admin/
