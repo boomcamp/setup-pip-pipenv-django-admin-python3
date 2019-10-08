@@ -9,9 +9,9 @@
 
 ## Switching python 2 into python 3 version.
 
-Python 2 will be no longer maintain until 2020, so its ideal if we switch to it's newer version you can read more about python [Python 2.7 will retire in](https://pythonclock.org/).
+Python 2 will be no longer maintain until 2020, so its ideal if we switch to it's newer version you can read more about [Python 2.7 will retire in](https://pythonclock.org/).
 
-[Some article about python's end of life](https://www.anaconda.com/end-of-life-eol-for-python-2-7-is-coming-are-you-ready/).
+[Some good article about python's end of life](https://www.anaconda.com/end-of-life-eol-for-python-2-7-is-coming-are-you-ready/).
 
 1. We need to check first available versions of python.
 
