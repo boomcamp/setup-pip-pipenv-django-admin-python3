@@ -108,8 +108,9 @@ Ouput:
 Pipfile  Pipfile.lock
 ```
 
-(my-app) = The active environment.
-Pipfile =  Handles the virtual environment packages and libraries.
+**(my-app)** = The active virtual environment.
+
+**Pipfile** =  Handles the virtual environment packages and libraries.
 
 What does **Pipfile** looks like?:
 
