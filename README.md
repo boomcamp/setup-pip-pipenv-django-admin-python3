@@ -1,8 +1,8 @@
 # Basic environment set-up.
 
-- Changing python2 to python3 vice versa.
-- Installing python pip and pipenv.
-- Setting up basic environment with pipenv, python3 and django-admin.
+- Switching python 2 into python 3 version.
+- Installing pipenv using pip3.
+- Creating our first environment with pipenv, python3 and django-admin.
 - Generating starter project using django-admin.
 - Running basic migration with SQLite.
 - Creating a super user.
