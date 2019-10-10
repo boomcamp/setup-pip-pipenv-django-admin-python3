@@ -70,6 +70,41 @@ sudo apt install python3-pip
 
 Note: `pip3` is only available for `python 3.7.4^` versions you can find installation procedure from other tutorial : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
 
+### Setting alias pip3 as pip
+
+1. Find `pip3` location.
+
+```
+dev-mentor@devmentor-PC-MK34LEZCBEAD:~/Downloads/my-app$ whereis pip3
+pip3: /usr/bin/pip3 /home/dev-mentor/.pyenv/shims/pip3.7 /home/dev-mentor/.pyenv/shims/pip3 /usr/share/man/man1/pip3.1.gz
+```
+
+2. After that we need to edit `.bashrc`
+
+```
+sudo nano ~/.bashrc 
+```
+
+and set alias `pip`, point the pip3 location.
+
+```
+alias pip='/usr/bin/pip3'
+```
+
+3. Reload shell
+
+```
+source ~/.bashrc 
+```
+
+4. Done !
+
+```
+dev-mentor@devmentor-PC-MK34LEZCBEAD:~/Downloads/my-app$ pip --version
+pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.6)
+```
+
+
 **Pipenv** = is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.)
 
 [Pipenv](https://pypi.org/project/pipenv/)
@@ -82,7 +117,7 @@ sudo pip3 install pipenv
 You should now successfully installed pip3 and pipenv. 
 
 ```
-dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pip3 --version
+dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pip --version
 pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.6)
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pipenv --version
 pipenv, version 2018.11.26
