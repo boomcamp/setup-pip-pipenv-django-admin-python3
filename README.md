@@ -2,8 +2,8 @@
 
 - Switching python 2 into python 3 version.
 - Installing pipenv using pip3.
-- Creating our first environment with pipenv, python3 and django-admin.
-- Generating starter project using django-admin.
+- Installing dependencies with pipenv.
+- Creating starter project with django-admin.
 - Running basic migration with SQLite.
 - Creating a super user.
 
@@ -88,11 +88,7 @@ dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pipenv --version
 pipenv, version 2018.11.26
 ```
 
-## Creating our first environment with pipenv, python3 and django-admin.
-
-What is **django-admin** = is a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project. Django automatically generates admin UI based on your project models.[Tutorialspoint](https://www.tutorialspoint.com/django/django_admin_interface.htm).
-
-[Read more: Django 2.2](https://docs.djangoproject.com/en/2.2/ref/contrib/admin/)
+## Installing dependencies with pipenv.
 
 1. First we need to create folder for our project as a container.
 
@@ -159,7 +155,11 @@ Example of package installed in `(my-app)` environment, we can check it by typin
 ![An image of packages](available-packages-in-my-app-environment.png)
 
 
-## Generating starter project using django-admin.
+## Creating starter project with django-admin.
+
+**django-admin** = is a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project. Django automatically generates admin UI based on your project models.[Tutorialspoint](https://www.tutorialspoint.com/django/django_admin_interface.htm).
+
+[Read more: Django 2.2](https://docs.djangoproject.com/en/2.2/ref/contrib/admin/)
 
 6. We can check django version.
 
