@@ -134,19 +134,18 @@ Pipfile  Pipfile.lock
 What does **Pipfile** looks like?:
 
 ```
-[[source]]
-[[source]]
+[[source]]                          # Here goes your package sources (where you are downloading your packages from).
 name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
+[dev-packages]                      # The required development packages
 
-[packages]
-django = "==2.2.6"
+[packages]                          # The required package to run application
+django = "==2.2.6"                 
 
-[requires]
-python_version = "3.7"
+[requires]                          # The required python version
+python_version = "3.6"             
 ```
 
 Example of package installed in `(my-app)` environment, we can check it by typing `pip list`:
