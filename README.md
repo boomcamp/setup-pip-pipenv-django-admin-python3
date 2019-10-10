@@ -51,7 +51,7 @@ source ~/.bashrc
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ python --version
-Python 3.6.8
+Python 3.7.4
 ```
 
 
@@ -105,7 +105,7 @@ pipenv --three
 3. Create virtual environment using specific version of python.
 
 ```
-pipenv --python 3.6
+pipenv --python 3.7
 ```
 
 4. Install latest version of django `https://www.djangoproject.com/download/`.
@@ -146,7 +146,7 @@ verify_ssl = true
 django = "==2.2.6"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
 ```
 
 Example of package installed in `(my-app)` environment, we can check it by typing `pip list`:
@@ -200,7 +200,7 @@ cd sample
 9. We can now run our application using `python3`.
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 Output:
@@ -237,7 +237,7 @@ Host: `http://127.0.0.1:8000/`
 By default, the configuration uses *SQLite*, you can type `python3 manage.py migrate` to create tables, the output will be:
 
 ```
-(my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app/sample$ python3 manage.py migrate
+(my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app/sample$ python manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:
@@ -266,7 +266,7 @@ Running migrations:
 1. After a successfull migration, you may want to create superuser.
 
 ```
-python3 manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 It will ask basic details for superuser account.
@@ -283,7 +283,7 @@ Superuser created successfully.
 2. After that serve the application folder.
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 3. Next navigate to admin dashboard, you should now able to login as superuser account.
