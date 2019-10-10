@@ -203,7 +203,7 @@ Quit the server with CONTROL-C.
 ```
 
 
-### Django default welcome page
+### You should now see this default welcome page
 
 Host: `http://127.0.0.1:8000/`
 
