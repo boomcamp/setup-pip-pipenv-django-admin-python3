@@ -173,6 +173,24 @@ django-admin --version
 django-admin startproject sample
 ```
 
+We should have now this basic folder and files structure, you can read the explanation [here](https://django-project-skeleton.readthedocs.io/en/latest/structure.html):
+
+```
+(my-app) dev-mentor@devmentor-PC-MK34LEZCBEAD:~/Downloads/my-app$ tree
+.
+├── Pipfile
+├── Pipfile.lock
+└── sample
+    ├── manage.py
+    └── sample
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+
+2 directories, 7 files
+```
+
 8. Next change directory to our created project folder.
 
 ```
