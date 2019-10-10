@@ -35,10 +35,10 @@ if havent installed python 3 : [Install-python-3-7-on-ubuntu-18-04](https://linu
 sudo nano ~/.bashrc
 ```
 
-3. Set alias for `python` and point the version you may want to set as default in this case `python3`.
+3. Set alias for `python` and point the version you may want to set as default in this case `python3.7`.
 
 ```
-alias python='/usr/bin/python3'
+alias python='/usr/bin/python3.7'
 ```
 
 3. Reload the `.bashrc`.
