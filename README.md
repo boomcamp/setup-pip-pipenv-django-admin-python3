@@ -1,4 +1,4 @@
-# Basic environment set-up.
+# Development environment set-up.
 
 - Switching from python 2 to python 3 version.
 - Installing pipenv using pip3.
