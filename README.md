@@ -188,13 +188,13 @@ Example of what we have installed in `(my-app)` environment:
 
 ## Creating starter project with django-admin.
 
-**django-admin** = is a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project. Django automatically generates admin UI based on your project models.[Tutorialspoint](https://www.tutorialspoint.com/django/django_admin_interface.htm).
+ [Django Admin](https://docs.djangoproject.com/en/3.0/ref/contrib/admin/) is a ready-to-use user interface for administrative activities. We all know how an admin interface is important for a web project. Django automatically generates admin UI based on your project models [Read more](https://www.tutorialspoint.com/django/django_admin_interface.htm).
 
-[Read more: Django 2.2](https://docs.djangoproject.com/en/2.2/ref/contrib/admin/)
-
-6. We can check django version.
+6. Since we installed `Django`, we can double check the version.
 
 ```
+# If django-admin is not defined or shows with error you can install it by : pip install django
+
 django-admin --version
 ```
 
@@ -204,7 +204,7 @@ django-admin --version
 django-admin startproject sample
 ```
 
-We should have now this basic folder and files structure, you can read the explanation [here](https://django-project-skeleton.readthedocs.io/en/latest/structure.html):
+We successfully created our `sample` app [folder structure](https://django-project-skeleton.readthedocs.io/en/latest/structure.html).
 
 ```
 (my-app) dev-mentor@devmentor-PC-MK34LEZCBEAD:~/Downloads/my-app$ tree
@@ -222,13 +222,13 @@ We should have now this basic folder and files structure, you can read the expla
 2 directories, 7 files
 ```
 
-8. Next change directory to our created project folder.
+8. Next to `sample` folder.
 
 ```
 cd sample
 ```
 
-9. We can now run our application using `python3`.
+9. Try running our app.
 
 ```
 python manage.py runserver
@@ -252,7 +252,7 @@ Quit the server with CONTROL-C.
 ```
 
 
-### You should now see this default welcome page
+### Welcome Page
 
 Host: `http://127.0.0.1:8000/`
 
@@ -265,7 +265,7 @@ Host: `http://127.0.0.1:8000/`
 
 ## Running basic migration with SQLite.
 
-By default, the configuration uses *SQLite*, you can type `python3 manage.py migrate` to create tables, the output will be:
+By default Django comes with default database setting which is `sqlite`, to create the tables type `python manage.py migrate`.   
 
 ```
 (my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app/sample$ python manage.py migrate
@@ -292,15 +292,15 @@ Running migrations:
 (my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app/sample$ 
 ```
 
-### Creating a super user.
+### Creating a super user account.
 
-1. After a successfull migration, you may want to create superuser.
+1. After a successfull migration, you may want to create superuser that we will use to logged in into our admin dashboard.
 
 ```
 python manage.py createsuperuser
 ```
 
-It will ask basic details for superuser account.
+django will ask some basic details for our superuser account.
 
 ```
 (my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app/sample$ python3 manage.py createsuperuser
@@ -311,7 +311,7 @@ Password (again):
 Superuser created successfully.
 ```
 
-2. After that serve the application folder.
+2. After that serve our application folder.
 
 ```
 python manage.py runserver
@@ -320,15 +320,14 @@ python manage.py runserver
 3. Next navigate to admin dashboard, you should now able to login as superuser account.
 
 ```
-http://127.0.0.1:8000/admin #http://127.0.0.1:8000/admin/login/?next=/admin/
+http://127.0.0.1:8000/admin
 ```
 
 ### Super admin panel after successfull logged in and migration:
 
 ![An image of admin panel](super-admin-panel.png)
 
+# Done!
 
-# Next
-
-Django-rest-framework: https://github.com/boomcamp/django-restframework
-
+[Django-rest-framework](https://github.com/boomcamp/django-restframework
+)
