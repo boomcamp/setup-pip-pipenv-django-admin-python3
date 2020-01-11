@@ -1,25 +1,26 @@
 # Basic environment set-up.
 
-- Switching python 2 into python 3 version.
+- Switching from python 2 to python 3 version.
 - Installing pipenv using pip3.
-- Installing dependencies with pipenv.
-- Creating starter project with django-admin.
-- Running basic migration with SQLite.
-- Creating a super user.
+- Installing dependencies using pipenv.
+- Creating a starter project using django-admin.
+- Running the basic migration with SQLite.
+- Creating a super user account.
 
-## Switching python 2 into python 3 version.
+### Switching python 2 into python 3 version.
 
-Python 2 will be no longer maintain until 2020, so its ideal if we switch to it's newer version you can read more about [Python 2.7 will retire in](https://pythonclock.org/).
+Python 2 will be no longer maintain until 2020, so its ideal if we switch to it's newer version you can read more about 
 
-[Some good article about python's end of life](https://www.anaconda.com/end-of-life-eol-for-python-2-7-is-coming-are-you-ready/).
+- [Python 2.7 will retire in](https://pythonclock.org/).
+- [Article about python's end of life](https://www.anaconda.com/end-of-life-eol-for-python-2-7-is-coming-are-you-ready/).
 
-1. We need to check first available versions of python.
+1. First we need to check the available versions of python.
 
 ```
 ls /usr/bin/python*
 ```
 
-It will display all available python version's installed in your computer like example 
+It will display the python version's installed in your computer:
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ ls /usr/bin/python*
@@ -29,13 +30,13 @@ dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ ls /usr/bin/python*
 ```
 if havent installed python 3 : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
 
-2. Next edit `./bashrc` using nano editor.
+2. Next edit `./bashrc`.
 
 ```
 sudo nano ~/.bashrc
 ```
 
-3. Set alias for `python` and point the version you may want to set as default in this case `python3.7`.
+3. Set alias for `python` and point the version you may want in this case `python3.7`.
 
 ```
 alias python='/usr/bin/python3.7'
@@ -47,7 +48,7 @@ alias python='/usr/bin/python3.7'
 source ~/.bashrc
 ```
 
-3. Finally we can now check the version.
+3. Finally we can check the new version.
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ python --version
@@ -55,37 +56,33 @@ Python 3.7.4
 ```
 
 
-## Installing pipenv using pip3.
+### Installing pipenv using pip3.
 
-**Pip** = is a package manager for Python.
-
-[What is Pip](https://realpython.com/what-is-pip/)
+[Python pip](https://realpython.com/what-is-pip/) is a package manager for Python.
 
 Installation:
 
 ```
 sudo apt install python3-pip
-#python2: sudo apt install python-pip
+#for python 2: sudo apt install python-pip
 ```
-
-Note: `pip3` is only available for `python 3.7.4^` versions you can find installation procedure from other tutorial : [Install-python-3-7-on-ubuntu-18-04](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/).
 
 ### Setting alias pip3 as pip
 
-1. Find `pip3` location.
+1. Find the `pip3` path.
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~/Downloads/my-app$ whereis pip3
 pip3: /usr/bin/pip3 /home/dev-mentor/.pyenv/shims/pip3.7 /home/dev-mentor/.pyenv/shims/pip3 /usr/share/man/man1/pip3.1.gz
 ```
 
-2. After that we need to edit `.bashrc`
+2. After that we need to update our `.bashrc`.
 
 ```
 sudo nano ~/.bashrc 
 ```
 
-and set alias `pip`, point the pip3 location.
+and set alias `pip` by pointing its path.
 
 ```
 alias pip='/usr/bin/pip3'
@@ -104,17 +101,16 @@ dev-mentor@devmentor-PC-MK34LEZCBEAD:~/Downloads/my-app$ pip --version
 pip 9.0.1 from /usr/lib/python3/dist-packages (python 3.6)
 ```
 
+### Installing pipenv
 
-**Pipenv** = is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.)
-
-[Pipenv](https://pypi.org/project/pipenv/)
+[Pipenv](https://pypi.org/project/pipenv/) is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.)
 
 ```
 sudo pip3 install pipenv
-#python2: sudo pip install pipenv
+#for python 2 version: sudo pip install pipenv
 ```
 
-You should now successfully installed pip3 and pipenv. 
+Check both versions. 
 
 ```
 dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pip --version
@@ -123,50 +119,51 @@ dev-mentor@devmentor-PC-MK34LEZCBEAD:~$ pipenv --version
 pipenv, version 2018.11.26
 ```
 
-## Installing dependencies with pipenv.
+### Installing project dependencies using pipenv.
 
-1. First we need to create folder for our project as a container.
+1. First we need to create our project container called `my-app`.
 
 ```
 mkdir my-app && cd my-app
 ```
 
-2. We also need to create virtual environment using `pipenv`.
+2. We also need to initialize our virtual environment.
 
 ```
 pipenv --three
 ```
 
-3. Create virtual environment using specific version of python.
+3. Install `python3`.
 
 ```
 pipenv --python 3.7
 ```
 
-4. Install latest version of django `https://www.djangoproject.com/download/`.
+4. Install [Django](`https://www.djangoproject.com/download/`).
 
 ```
 pipenv install Django==2.2.6
 ```
 
-5. Last is activate our virtual environment.
+5. Activate the virtual environment.
 
 ```
 pipenv shell
 ```
 
-Ouput:
+Done:
 
 ```
 (my-app) dev-100@dev100-PC-MK34LEZCBEAD:~/Downloads/my-app$
 Pipfile  Pipfile.lock
 ```
 
-**(my-app)** = The active virtual environment.
+**(my-app)** = Our active virtual environment.
 
-**Pipfile** =  Handles the virtual environment packages and libraries.
+**Pipfile** =  Handles the virtual environment packages and settings.
 
-What does **Pipfile** looks like?:
+
+Our created Pipfile:
 
 ```
 [[source]]                          # Here goes your package sources (where you are downloading your packages from).
@@ -183,7 +180,7 @@ django = "==2.2.6"
 python_version = "3.6"             
 ```
 
-Example of package installed in `(my-app)` environment, we can check it by typing `pip list`:
+Example of what we have installed in `(my-app)` environment:
 
 
 ![An image of packages](available-packages-in-my-app-environment.png)
